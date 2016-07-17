@@ -16,7 +16,7 @@ void setup () {
   z = floor(random(440));
   blood = floor(random(200));
 }
- 
+
 void draw() { 
  
   image(imgBg2,b1,0);
