@@ -19,21 +19,21 @@ void setup () {
  
 void draw() { 
  
-  image(imgBg2,(b1 % 640),0);
-  image(imgBg1,(b2 % 640),0);
-  image(imgHp,5,5);
+  image(imgBg2,b1,0);
+  image(imgBg1,b2,0);
   fill(255,0,0);
-  rect(20,15,blood,15);
+  rect(20,15,blood,20);
+  image(imgHp,5,5);
     
   image(imgFighter,580,240);
   image(imgTreasure,x,y);
   image(imgEnemy,(speed % 640),z);
   
   speed = speed + 5;
-  b1 = b1 + 2;
-  b2 = b2 + 2;
+  b1 = b1 + 3;
+  b2 = b2 + 3;
   if (speed > 640) speed = 5;
-  if (b1 >640) b1=0;
-  if (b2 >0) b2=-640;
+  if (b1 >640) b1=-640;
+  if (b2 >640) b2=-640;
    
 }
