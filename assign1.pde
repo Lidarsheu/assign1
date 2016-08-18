@@ -12,8 +12,8 @@ void setup () {
   imgBg1 = loadImage("img/bg1.png");
   imgBg2 = loadImage("img/bg2.png");
   x = floor(random(620));
-  y = floor(random(440));
-  z = floor(random(440));
+  y = floor(random(40,440));
+  z = floor(random(40,440));
   blood = floor(random(200));
 }
 
